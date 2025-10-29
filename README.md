@@ -5,8 +5,8 @@ Fun fact, [Bikes For Refugees](https://www.bikesforrefugees.scot/) is a real pro
 ## Set up
 
 1. **Clone** [this repository](https://github.com/Migracode-Barcelona/bikes-for-refugees.git) onto your machine. You can use this [video guide](https://www.youtube.com/watch?v=ILJ4dfOL7zs) to refresh your memory if you're stuck.
-1. Open up the repository you just cloned using VSCode.
-1. Make a new branch for your work in the form `cohort/name`. For example: `NW7/GermanBencci`
+2. Open up the repository you just cloned using VSCode.
+3. Make a new branch
 
 You're now ready to code!
 
@@ -54,6 +54,6 @@ Add a hover effect using CSS, so that:
 
 ## Submit your work
 
-Once you've finished, **open a pull request to MigraCode Barcelona**.
+Once you've finished, **open a pull request and follow the instructions in the backlog**.
 
 

@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+
 }
 
 body,
@@ -50,7 +51,7 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-top: 1rem;
 }
 
@@ -67,7 +68,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
 }
 
 .navigation__link {
@@ -144,7 +145,7 @@ button:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 5rem 2rem; 
+  padding: 6rem 2rem; 
 margin-bottom: 3rem; 
 text-align: left;
 color: var(--white);
@@ -190,41 +191,45 @@ color: var(--white);
 
 .learn { 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 2rem;
 }
 
 /* Article */
 
 .article {
   border: 1px solid var(--grey-light);
-  padding: 0.5em;
+  padding: 0.5rem ;
   background-color: var(--white);
-
+margin: 0.5rem;
+width: 300px;
+margin-bottom: 0.5;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding: 0.5rem;
+
 
 }
 
 .article__title-link {
-  text-decoration: none;
-  color: var(--orange-dark);
-text-align: center;
+text-decoration: none;
+color: var(--orange-dark);
+text-align: left;
 display: flex;
 padding: 0.5rem;
+margin-top: 0;
+margin-right: 5rem;
 
 }
 .article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  text-align: left; 
-   display: flex;
+  margin: 0;
+  text-align:justify; 
+  display: flex;
   justify-content: center;
-  margin-left: 0.5rem
+  padding: 0.5rem;
 }
 
 .article__thumbnail {
@@ -242,6 +247,7 @@ padding: 0.5rem;
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 .article__read-more a:hover,
@@ -264,7 +270,7 @@ figure {
 .facebook-link {
   color: var(--orange-dark);
   text-align: right;
-
+  padding-right: 2rem;
 }
 
 /* Sidebar */
@@ -273,12 +279,14 @@ figure {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  margin-left: 2rem;
+  
 }
 
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .footer__content {
@@ -306,15 +314,19 @@ figure {
   }
 
   .main {
-    padding-right: 2rem;
     flex: 0 0 65%;
   }
 
 .sidebar{
     flex: 0 0 30%;
 }
+
 .navigation__list{ 
   gap: 1.5;
 }
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-display: swap;
 }
 

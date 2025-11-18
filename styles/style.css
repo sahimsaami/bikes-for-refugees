@@ -2,20 +2,18 @@
  *
  * Module: HTML/CSS
  * Lesson: 1
- * 
- */
+ * */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
-
 }
 
 body,
@@ -77,9 +75,10 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 /* BONUS hover effect for nav links */
 
-.navigation__link:hover{ 
+.navigation__link:hover { 
   color: var(--orange-dark);
 }
 
@@ -98,25 +97,24 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  button {
+button {
   background-color: var(--orange-dark);
   color: var(--white);
   border: none;
   border-radius: 3px;
   padding: 0.60rem 1.4rem;
   font-weight: 600;
- cursor: pointer;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
+
 button:hover {
   background-color: var(--white);
   color: var(--orange-dark);
   border: 2px solid var(--orange-dark);
 }
-
 
 /* Content */
 
@@ -146,14 +144,11 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   padding: 6rem 2rem; 
-margin-bottom: 3rem; 
-text-align: left;
-color: var(--white);
+  margin-bottom: 3rem; 
+  text-align: left;
+  color: var(--white);
+}
 
-}
-.navigation__item {
-  padding: 0.5rem 1.5rem; 
-}
 
 .hero h1 {
   margin-bottom: 1rem;
@@ -164,7 +159,6 @@ color: var(--white);
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -199,34 +193,32 @@ color: var(--white);
 
 .article {
   border: 1px solid var(--grey-light);
-  padding: 0.5rem ;
+  padding: 0.5rem;
   background-color: var(--white);
-margin: 0.5rem;
-width: 300px;
-margin-bottom: 0.5;
+  margin: 0.5rem;
+  width: 300px;
+  margin-bottom: 0.5rem; 
 }
 
 .article__title {
   font-size: 1rem;
   font-weight: 700;
   padding: 0.5rem;
-
-
 }
 
 .article__title-link {
-text-decoration: none;
-color: var(--orange-dark);
-text-align: left;
-display: flex;
-padding: 0.5rem;
-margin-top: 0;
-margin-right: 5rem;
-
+  text-decoration: none;
+  color: var(--orange-dark);
+  text-align: left;
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 0;
+  margin-right: 5rem;
 }
+
 .article__summary {
   margin: 0;
-  text-align:justify; 
+  text-align: justify; 
   display: flex;
   justify-content: center;
   padding: 0.5rem;
@@ -235,7 +227,6 @@ margin-right: 5rem;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
-  
 }
 
 .article__read-more {
@@ -253,11 +244,11 @@ margin-right: 5rem;
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: underline;
-
 }
+
 figure {
   margin: 0 0 0 0;
-  margin-bottom: 0.5rem ;
+  margin-bottom: 0.5rem;
   text-align: center;
   display: flex;
 } 
@@ -280,7 +271,6 @@ figure {
   flex-direction: column;
   min-width: 350px;
   margin-left: 2rem;
-  
 }
 
 /* Footer */
@@ -310,23 +300,22 @@ figure {
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
-
   }
 
   .main {
     flex: 0 0 65%;
   }
 
-.sidebar{
+  .sidebar{
     flex: 0 0 30%;
+  }
+
+  .navigation__list{ 
+    gap: 1.5;
+  }
 }
 
-.navigation__list{ 
-  gap: 1.5;
-}
-}
 @font-face {
   font-family: "Source Sans Pro";
   font-display: swap;
 }
-

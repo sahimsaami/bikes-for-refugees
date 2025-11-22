@@ -2,16 +2,15 @@
  *
  * Module: HTML/CSS
  * Lesson: 1
- * 
- */
+ * */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -32,6 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1rem;
 }
 
 .header,
@@ -49,7 +49,7 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-top: 1rem;
 }
 
@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
 }
 
 .navigation__link {
@@ -76,6 +76,11 @@ p {
   text-decoration: none;
 }
 
+/* BONUS hover effect for nav links */
+
+.navigation__link:hover { 
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -92,11 +97,24 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  padding: 0.60rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: 2px solid var(--orange-dark);
+}
 
 /* Content */
 
@@ -120,9 +138,17 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 2rem; 
+  margin-bottom: 3rem; 
+  text-align: left;
+  color: var(--white);
 }
+
 
 .hero h1 {
   margin-bottom: 1rem;
@@ -133,7 +159,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,27 +183,45 @@ p {
   background: var(--orange-dark);
 }
 
+.learn { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 2rem;
+}
 
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  padding: 0.5rem;
+  background-color: var(--white);
+  margin: 0.5rem;
+  width: 300px;
+  margin-bottom: 0.5rem; 
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding: 0.5rem;
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  text-align: left;
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 0;
+  margin-right: 5rem;
 }
 
 .article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
+  text-align: justify; 
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
 .article__thumbnail {
@@ -195,12 +238,20 @@ p {
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: underline;
 }
+
+figure {
+  margin: 0 0 0 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  display: flex;
+} 
 
 .fa {
   margin-right: 0.5rem;
@@ -209,6 +260,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+  padding-right: 2rem;
 }
 
 /* Sidebar */
@@ -217,12 +270,13 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  margin-left: 2rem;
 }
 
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .footer__content {
@@ -242,9 +296,26 @@ p {
 @media screen and (min-width: 992px) {
   .content {
     flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
   }
 
   .main {
-    padding-right: 2rem;
+    flex: 0 0 65%;
   }
+
+  .sidebar{
+    flex: 0 0 30%;
+  }
+
+  .navigation__list{ 
+    gap: 1.5;
+  }
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-display: swap;
 }
